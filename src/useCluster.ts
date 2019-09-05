@@ -26,10 +26,12 @@ export interface IUseClusterProperties<T extends IUseClusterItem>
   cluster: boolean;
 }
 
-export type IUseClusterClusters<T extends IUseClusterItem> = Array<
+export type IUseClusterCluster<T extends IUseClusterItem> =
   | ClusterFeature<IUseClusterProperties<T>>
   | PointFeature<IUseClusterProperties<T>>
->;
+;
+
+export type IUseClusterClusters<T extends IUseClusterItem> = Array<IUseClusterCluster<T>>;
 
 export const useCluster = <T extends IUseClusterItem = IUseClusterItem>({
   region: givenRegion,
