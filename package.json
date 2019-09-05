@@ -1,0 +1,50 @@
+{
+  "name": "react-native-maps-use-cluster",
+  "version": "1.0.2",
+  "description": "A hook for managing Marker cluster for react-native-maps.",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "maps",
+    "react-native-maps",
+    "android",
+    "ios",
+    "cluster",
+    "marker"
+  ],
+  "license": "MIT",
+  "author": "Loïc Mahieu",
+  "homepage": "https://github.com/loicmahieu/react-native-maps-use-cluster",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loicmahieu/react-native-maps-use-cluster"
+  },
+  "main": "src/index.ts",
+  "files": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "test": "yarn lint && tsc --noEmit",
+    "lint": "tslint 'src/**/*.ts?(x)'"
+  },
+  "devDependencies": {
+    "@types/mapbox__geo-viewport": "^0.4.0",
+    "@types/react": "^16.9.2",
+    "@types/react-native": "^0.60.11",
+    "@types/supercluster": "^5.0.1",
+    "react": "^16.9.0",
+    "react-native": "^0.60.5",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "react": "> 15.0.0",
+    "react-native": "> 0.50.0"
+  },
+  "dependencies": {
+    "@mapbox/geo-viewport": "^0.4.0",
+    "supercluster": "^6.0.2"
+  }
+}
